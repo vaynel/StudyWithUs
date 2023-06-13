@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import { userPages } from '@/router/user-pages'
 import {menuPages} from "@/router/menu-pages";
-import { StudyRoomPages } from './personalStudyRoom-pages';
+import { StudyRoomPages } from './personal-study-room-pages';
 import { noticePages } from './notice';
 
 

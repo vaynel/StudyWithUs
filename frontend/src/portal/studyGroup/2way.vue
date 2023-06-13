@@ -14,26 +14,26 @@
         </div>
 
         <!-- <router-link to="/notice"> -->
-          <div
-            id="toParticipate"
-            class="select"
-            :style="`margin-bottom: 3px`"
-            @click="showParticipateModal"
-          >
-            <img src="../../assets/images/select_btn.png">
-            스터디 그룹? 나도 참가하고 싶어!
-          </div>
+        <div
+          id="toParticipate"
+          class="select"
+          :style="`margin-bottom: 3px`"
+          @click="showParticipateModal"
+        >
+          <img src="../../assets/images/select_btn.png">
+          스터디 그룹? 나도 참가하고 싶어!
+        </div>
         <!-- </router-link> -->
 
         <!-- <router-link to="/notice"> -->
-          <div
-            id="toStudyGroup"
-            class="select"
-            @click="showStudyGroupModal"
-          >
-            <img src="../../assets/images/select_btn.png">
-            응! 당연하거 아니야?
-          </div>
+        <div
+          id="toStudyGroup"
+          class="select"
+          @click="showStudyGroupModal"
+        >
+          <img src="../../assets/images/select_btn.png">
+          응! 당연하거 아니야?
+        </div>
         <!-- </router-link> -->
       </div>
     </template>

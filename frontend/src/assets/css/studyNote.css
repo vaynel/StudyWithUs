@@ -1,0 +1,53 @@
+.study_note{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+.note{
+    font-family: 'Galmuri9';
+font-size: 20px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: left;
+
+position: inherit;
+    z-index: 1000;
+    color: black;
+
+}
+
+._subject{
+    top: 10px;
+    left: 21px;
+}
+
+._subject1{
+    top: 10px;
+    left: 90px;
+}
+
+._date{
+    font-size: 14px;
+    top: 10px;
+    left: 320px;
+}
+._content{
+    left: 81px;
+    top: 42px;
+    font-size: smaller;
+}
+
+.study_note_content{
+    position: inherit;
+    top: 44px;
+    left: 76px;
+    width: 300px;
+    height: 206px;
+}
+#note_textarea{
+    width: 308px;
+    height: 213px;
+    font-family: 'Galmuri11';
+}

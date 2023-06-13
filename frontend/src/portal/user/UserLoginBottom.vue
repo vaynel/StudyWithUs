@@ -2,14 +2,24 @@
 <template>
   <div class="container_login">
     <div class="modal_login">
-      <form @submit.prevent="submitLoginForm" enctype="multipart/form-data" class="wrapper_login">
+      <form
+        enctype="multipart/form-data"
+        class="wrapper_login"
+        @submit.prevent="submitLoginForm"
+      >
         <div>
           <label>이메일</label><br>
-          <input type="text" v-model="login.email" />
+          <input
+            v-model="login.email"
+            type="text"
+          >
         </div>
         <div :style="`margin-bottom: 10px`">
           <label>비밀번호</label><br>
-          <input type="text" v-model="login.password" />
+          <input
+            v-model="login.password"
+            type="text"
+          >
         </div>
         <button @click="doLogin()">
           <span :style="`margin-top:2px`">로그인</span>
@@ -24,16 +34,16 @@ import {loginStore} from "@/store/user/login";
 import {router} from "@/router";
 
 export default {
+
+  name: 'Login',
+
+  inject: ['loginCheck'],
   setup() {
     const login = loginStore();
     return {
       login: login
     }
   },
-
-  name: 'Login',
-
-  inject: ['loginCheck'],
 
   methods: {
     submitLoginForm() {

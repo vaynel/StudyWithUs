@@ -1,7 +1,7 @@
 <template>
-  <UserMain v-if="loginStatus"/>
-   <noticePage v-if="isNoticePage"></noticePage>
-  <StudyRoom v-if="isStudyRoom" ></StudyRoom>
+  <UserMain v-if="loginStatus" />
+  <noticePage v-if="isNoticePage" />
+  <StudyRoom v-if="isStudyRoom" />
 </template>
 
 <script>
@@ -12,18 +12,18 @@ import StudyRoom from '@/portal/studyRoom/PersonalStodyRoom.vue'
 export default {
   name: 'NintendoTopFrame',
 
+  components: {
+    UserMain,
+    noticePage,
+    StudyRoom
+  },
+
   data: function() {
     return {
       loginStatus: false,
       isNoticePage : false,
       isStudyRoom : true
     }
-  },
-
-  components: {
-    UserMain,
-    noticePage,
-    StudyRoom
   },
 
   methods: {

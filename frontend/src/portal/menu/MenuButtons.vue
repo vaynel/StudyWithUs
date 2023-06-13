@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper_menu_btns">
-    <div class="wrapper_btn" id="stopWatch">
+    <div
+      id="stopWatch"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_stopwatch.png">
       </div>
@@ -9,7 +12,10 @@
       </div>
     </div>
 
-    <div class="wrapper_btn" id="Dday">
+    <div
+      id="Dday"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_dday.png">
       </div>
@@ -18,7 +24,10 @@
       </div>
     </div>
 
-    <div class="wrapper_btn" id="diary">
+    <div
+      id="diary"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_diary.png">
       </div>
@@ -27,7 +36,10 @@
       </div>
     </div>
 
-    <div class="wrapper_btn" id="friends">
+    <div
+      id="friends"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_friends.png">
       </div>
@@ -36,7 +48,10 @@
       </div>
     </div>
 
-    <div class="wrapper_btn" id="studyGroup">
+    <div
+      id="studyGroup"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_studygroup.png">
       </div>
@@ -45,7 +60,10 @@
       </div>
     </div>
 
-    <div class="wrapper_btn" id="bookMark">
+    <div
+      id="bookMark"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_bookmark.png">
       </div>
@@ -54,7 +72,10 @@
       </div>
     </div>
 
-    <div class="wrapper_btn" id="profile">
+    <div
+      id="profile"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_profile.png">
       </div>
@@ -63,7 +84,10 @@
       </div>
     </div>
 
-    <div class="wrapper_btn" id="groupChatting">
+    <div
+      id="groupChatting"
+      class="wrapper_btn"
+    >
       <div>
         <img src="../../assets/images/btn_groupchatting.png">
       </div>

@@ -4,8 +4,7 @@
   <div class="modal_mask">
     <div>
       <div class="container_modal_form_B">
-        <slot name="contents">
-        </slot>
+        <slot name="contents" />
       </div>
     </div>
   </div>

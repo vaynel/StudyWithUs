@@ -47,6 +47,13 @@ left: 297px;
     top: 220px;
     z-index: 10;
 }
+
+.sleeping{
+    width: 100px;
+    height: auto;
+    left: 152px;
+    top: 175px;
+}
 .table{
     position: inherit;
     width: 200px;
@@ -97,16 +104,15 @@ top: 28px;
 
 }
 
-.status{
+.statusText{
     font-family: 'Galmuri9';
-font-size: 24px;
-font-weight: 400;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
 
-position: inherit;
-left: 165px;
+    position: inherit;
+    left: 165px;
     top: 185px;
-
 }

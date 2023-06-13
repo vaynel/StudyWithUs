@@ -23,20 +23,37 @@
         <img src="../../assets/images/close_btn.png">
       </span>
     </div>
-    <div class="header_contents">
-      <MenuButtons />
-    </div>
+
+    <form class="study_note">
+      <img src="../../assets/images/note.png"> 
+      <span class="note _subject">과목 : </span><span class="note _subject1">수학</span>
+      <span class="note _date">23.06.13</span>
+      <div class="study_note_content">
+        <textarea
+          id="note_textarea"
+          placeholder="add multiple lines"
+          style="resize: none;"
+        />
+      </div>
+    </form>
   </div>
 </template>
 
+
 <script>
-import MenuButtons from "@/portal/menu/MenuButtons";
 
 export default {
-  name: "MenuHome",
+  name: "StudyNote",
+  
 
   components: {
-    MenuButtons
+  
   },
+  
+
 }
 </script>
+
+<style>
+@import "../../assets/css/studyNote.css";
+</style>

@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<template >
+<template>
   <div>
     <div
       class="allNotice"
@@ -20,12 +20,12 @@
         >
       </div>
     </div>
-      <twoWay v-if="is2WayOpen">
-        <label>2way 보여주기</label>
-      </twoWay>
-      <noticeLists v-if="isListOpen">
-        <label>리스트 보여주기</label>
-      </noticeLists>
+    <twoWay v-if="is2WayOpen">
+      <label>2way 보여주기</label>
+    </twoWay>
+    <noticeLists v-if="isListOpen">
+      <label>리스트 보여주기</label>
+    </noticeLists>
   </div>
 </template>
 

@@ -1,17 +1,26 @@
 <template>
   <div class="container_main">
-    <div class="npc1" @click="showModal">
-      <img src="../../assets/images/npc1.png" />
+    <div
+      class="npc1"
+      @click="showModal"
+    >
+      <img src="../../assets/images/npc1.png">
     </div>
 
-    <div class="kirby" ref="kirby_position">
-      <img src="../../assets/images/kirby_org.png" />
+    <div
+      ref="kirby_position"
+      class="kirby"
+    >
+      <img src="../../assets/images/kirby_org.png">
     </div>
 
     <!-- 첫 대화창 -->
     <MessageModal v-if="modalOpen">
       <template #character>
-        <img src="../../assets/images/npc1_m.png" class="npc1_m"/>
+        <img
+          src="../../assets/images/npc1_m.png"
+          class="npc1_m"
+        >
       </template>
       <template #contents>
         <div :style="`margin: 25px 30px`">
@@ -20,15 +29,24 @@
           </div>
 
           <router-link to="/user/signup">
-            <div class="select" id="toSignUp" :style="`margin-bottom: 3px`" @click="showSignupModal">
-              <img src="../../assets/images/select_btn.png"/>
+            <div
+              id="toSignUp"
+              class="select"
+              :style="`margin-bottom: 3px`"
+              @click="showSignupModal"
+            >
+              <img src="../../assets/images/select_btn.png">
               아이디..? 없는데...
             </div>
           </router-link>
 
           <router-link to="/user/login">
-            <div class="select" id="toLogin" @click="showLoginModal">
-              <img src="../../assets/images/select_btn.png" />
+            <div
+              id="toLogin"
+              class="select"
+              @click="showLoginModal"
+            >
+              <img src="../../assets/images/select_btn.png">
               어디다가 입력하면 되는거야?
             </div>
           </router-link>
@@ -39,13 +57,21 @@
     <!-- 회원가입 클릭 시 -->
     <MessageModal v-if="signUpModalOpen">
       <template #character>
-        <img src="../../assets/images/npc1_m.png" class="npc1_m_2"/>
+        <img
+          src="../../assets/images/npc1_m.png"
+          class="npc1_m_2"
+        >
       </template>
       <template #contents>
         <div :style="`margin: 40px 30px; font-size: 12px`">
-          <div :style="`margin-bottom: 3px`">아래 회원가입 란을 띄어놨으니 얼른 적어줘~</div>
+          <div :style="`margin-bottom: 3px`">
+            아래 회원가입 란을 띄어놨으니 얼른 적어줘~
+          </div>
           <div>빠진거 없는지 꼼꼼히 확인 하는것도 잊지마!</div>
-          <div class="next_btn" @click="showSignupValidationModal">
+          <div
+            class="next_btn"
+            @click="showSignupValidationModal"
+          >
             <img src="../../assets/images/next_btn.png">
           </div>
         </div>
@@ -55,7 +81,10 @@
     <!-- 로그인 클릭시 -->
     <MessageModal v-if="loginModalOpen">
       <template #character>
-        <img src="../../assets/images/npc1_m.png" class="npc1_m_2"/>
+        <img
+          src="../../assets/images/npc1_m.png"
+          class="npc1_m_2"
+        >
       </template>
       <template #contents>
         <div :style="`margin: 30px 30px; font-size: 12px`">
@@ -68,7 +97,10 @@
           <div>
             오늘도 화이팅 하자고! 항상 응원해! 엣헴...
           </div>
-          <div class="next_btn" @click="showAskSignupModal">
+          <div
+            class="next_btn"
+            @click="showAskSignupModal"
+          >
             <img src="../../assets/images/next_btn.png">
           </div>
         </div>
@@ -78,23 +110,33 @@
     <!-- 회원가입 validation -->
     <MessageModal v-if="signupValidation">
       <template #character>
-        <img src="../../assets/images/npc1_m.png" class="npc1_m"/>
+        <img
+          src="../../assets/images/npc1_m.png"
+          class="npc1_m"
+        >
       </template>
       <template #contents>
         <div :style="`margin: 25px 30px; font-size: 12px`">
           <div :style="`margin-bottom: 3px`">
-            <div>{{signup.errorEmail}}</div>
-            <div>{{signup.errorEmailForm}}</div>
-            <div>{{signup.errorPassword}}</div>
-            <div>{{signup.errorNickname}}</div>
+            <div>{{ signup.errorEmail }}</div>
+            <div>{{ signup.errorEmailForm }}</div>
+            <div>{{ signup.errorPassword }}</div>
+            <div>{{ signup.errorNickname }}</div>
 
-            <div class="next_btn" @click="showAskLoginModal">
+            <div
+              class="next_btn"
+              @click="showAskLoginModal"
+            >
               <img src="../../assets/images/next_btn.png">
             </div>
 
             <div v-if="!signup.errorEmailForm && !signup.errorEmail && !signup.errorPassword && !signup.errorNickname">
-              <div :style="`margin-top: 5px`">좋아 드디어 모든 조건을 만족 하는구만!</div>
-              <div :style="`margin-bottom: 5px`">얼른 회원가입 버튼을 눌러봐!</div>
+              <div :style="`margin-top: 5px`">
+                좋아 드디어 모든 조건을 만족 하는구만!
+              </div>
+              <div :style="`margin-bottom: 5px`">
+                얼른 회원가입 버튼을 눌러봐!
+              </div>
               <div>정말이지... 이제 시작이라구~ 언제나 응원할게!</div>
             </div>
           </div>
@@ -105,7 +147,10 @@
     <!-- 회원가입 -> 로그인 -->
     <MessageModal v-if="askLogin">
       <template #character>
-        <img src="../../assets/images/npc1_m.png" class="npc1_m"/>
+        <img
+          src="../../assets/images/npc1_m.png"
+          class="npc1_m"
+        >
       </template>
       <template #contents>
         <div :style="`margin: 27px 30px`">
@@ -114,15 +159,24 @@
           </div>
 
           <router-link to="/user/signup">
-            <div class="select" id="toSignUp" :style="`margin-bottom: 3px`" @click="showSignupModal">
-              <img src="../../assets/images/select_btn.png"/>
+            <div
+              id="toSignUp"
+              class="select"
+              :style="`margin-bottom: 3px`"
+              @click="showSignupModal"
+            >
+              <img src="../../assets/images/select_btn.png">
               미안.. 아무래도 잘못 누른것 같아..
             </div>
           </router-link>
 
           <router-link to="/user/login">
-            <div class="select" id="toLogin" @click="showLoginModal">
-              <img src="../../assets/images/select_btn.png" />
+            <div
+              id="toLogin"
+              class="select"
+              @click="showLoginModal"
+            >
+              <img src="../../assets/images/select_btn.png">
               응. 깜빡했지 뭐야. 이메일이랑 비밀번호를 말해줄게!
             </div>
           </router-link>
@@ -133,7 +187,10 @@
     <!-- 로그인 -> 회원가입 -->
     <MessageModal v-if="askSignup">
       <template #character>
-        <img src="../../assets/images/npc1_m.png" class="npc1_m_2"/>
+        <img
+          src="../../assets/images/npc1_m.png"
+          class="npc1_m_2"
+        >
       </template>
       <template #contents>
         <div :style="`margin: 23px 30px`">
@@ -143,15 +200,24 @@
           </div>
 
           <router-link to="/user/signup">
-            <div class="select" id="toSignUp" :style="`margin-bottom: 3px`" @click="showSignupModal">
-              <img src="../../assets/images/select_btn.png"/>
+            <div
+              id="toSignUp"
+              class="select"
+              :style="`margin-bottom: 3px`"
+              @click="showSignupModal"
+            >
+              <img src="../../assets/images/select_btn.png">
               흠.. 회원가입을 해야겠어!
             </div>
           </router-link>
 
           <router-link to="/user/login">
-            <div class="select" id="toLogin" @click="showLoginModal">
-              <img src="../../assets/images/select_btn.png" />
+            <div
+              id="toLogin"
+              class="select"
+              @click="showLoginModal"
+            >
+              <img src="../../assets/images/select_btn.png">
               미안 잘못 누른거 같아.. 얼른 입력할게!
             </div>
           </router-link>
@@ -166,17 +232,17 @@ import MessageModal from "@/components/modal/MessageModal";
 import { signupStore } from "@/store/user/signup";
 
 export default {
-  setup() {
-    const signup = signupStore();
-    return {
-      signup: signup
-    }
-  },
 
   name: 'UserMain',
 
   components: {
     MessageModal
+  },
+  setup() {
+    const signup = signupStore();
+    return {
+      signup: signup
+    }
   },
 
   data: function() {

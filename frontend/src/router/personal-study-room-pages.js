@@ -7,6 +7,11 @@ const StudyRoomPages = [
             {
                 path: "home",
                 component: () => import('@/portal/menu/MenuFrame'),
+            },
+
+            {
+                path: "note",
+                component: () => import('@/portal/studyRoom/StudyNote'),
             }
         ]
 
