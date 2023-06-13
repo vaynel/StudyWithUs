@@ -1,0 +1,26 @@
+
+/*폰트*/
+@font-face {
+    font-family: 'Galmuri7';
+    src: url('../font/Galmuri7.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Galmuri9';
+    src: url('../font/Galmuri9.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Galmuri11';
+    src: url('../font/Galmuri11.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Galmuri11-Bold';
+    src: url('../font/Galmuri11-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Galmuri14';
+    src: url('../font/Galmuri14.ttf') format('truetype');
+}

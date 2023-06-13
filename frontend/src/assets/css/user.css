@@ -1,0 +1,147 @@
+/*[start] main ==========================================================================*/
+
+.container_main {
+    background-image: url("../../assets/images/background_home.png");
+    background-size: contain;
+
+    width: 100%;
+    height: 100%;
+}
+
+.npc1 img{
+    position: absolute;
+    left: 225px;
+    top: 150px;
+
+    width: 110px;
+    height: 117.33px;
+}
+
+.kirby img {
+    position: absolute;
+    left: 100px;
+    top: 225px;
+
+    width: 50px;
+    height: 45.83px;
+}
+
+.npc1_m {
+    position: absolute;
+    width: 105.6px;
+    height: 112.09px;
+
+    left: 300px;
+    top: 80px;
+
+    z-index: 999999999;
+}
+
+.npc1_m_2 {
+    position: absolute;
+    width: 105.6px;
+    height: 112.09px;
+
+    left: 300px;
+    top: 95px;
+
+    z-index: 999999999;
+}
+
+/*[end] main ==========================================================================*/
+
+/*[start] signup ==========================================================================*/
+
+.container_signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper_signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Galmuri9';
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.wrapper_signup input {
+    color: #1E1E1C;
+
+    font-size: 12px;
+
+    width: 135px;
+    height: 16px;
+
+    margin: 3px 0 10px 0;
+}
+
+.next_btn {
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    left: 360px;
+    top: 80px;
+
+    cursor: grab;
+}
+
+/*[end] signup ==========================================================================*/
+
+/*[start] login ==========================================================================*/
+
+.container_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.modal_login {
+    background-image: url("../images/login_form.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 394.97px;
+    height: 245.57px;
+}
+
+.wrapper_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Galmuri9';
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.wrapper_login input {
+    color: #1E1E1C;
+
+    font-size: 12px;
+
+    width: 135px;
+    height: 16px;
+
+    margin: 5px 0 10px 0;
+}
+
+.wrapper_login button, .wrapper_signup button {
+    font-family: 'Galmuri9';
+    color: white;
+    cursor: grab;
+}

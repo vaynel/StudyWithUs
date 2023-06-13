@@ -1,0 +1,204 @@
+/*[start] nintendo frame==========================================================================*/
+
+.container_frame {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.nintendo_frame {
+    background-image: url("../images/nintendo_frame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+
+    width: 994px;
+    height: 918px;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+}
+
+.nintendo_top_frame {
+
+    /*위치 확인용 색상*/
+    /*background-color: blue;*/
+
+    width: 468px;
+    height: 346px;
+
+    position: relative;
+    top: 79px;
+    left: 2px;
+}
+
+.nintendo_bottom_frame {
+
+    /*위치 확인용 색상*/
+    background-color: black;
+
+    width: 469px;
+    height: 348px;
+
+    position: relative;
+    top: 137px;
+}
+
+/*[end] nintendo frame==========================================================================*/
+
+/*[start] modal==========================================================================*/
+
+/*모달 뒷배경*/
+.modal_mask {
+    position: absolute;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+
+/*대화창*/
+.container_message_modal {
+    background-image: url("../images/message_modal.png");
+    background-size: cover;
+
+    font-family: 'Galmuri9';
+    font-size: 11px;
+
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+
+    width: 400px;
+    height: 115.63px;
+
+    position: absolute;
+    top: 170px;
+    left: 35px;
+}
+
+.select:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 1.5px;
+}
+
+.select img{
+    width: 16px;
+    height: 15px;
+}
+
+
+.next_btn img{
+    width: 18px;
+    height: 10px;
+}
+
+/*긴 모달 폼*/
+.container_modal_form_A {
+    background-image: url("../images/modal_form_A.png");
+    background-size: cover;
+
+    font-family: 'Galmuri9';
+    font-size: 11px;
+
+    width: 214.5px;
+    height: 306.09px;
+}
+
+.close_btn_B img{
+    width: 16px;
+    height: 16px;
+
+    /*위치 수정예정*/
+}
+
+/*짧은 모달 폼*/
+.container_modal_form_B {
+    background-image: url("../images/modal_form_B.png");
+    background-size: cover;
+
+    font-family: 'Galmuri9';
+    font-size: 11px;
+
+    width: 300px;
+    height: 245.57px;
+}
+
+.close_btn_A img{
+    width: 16px;
+    height: 16px;
+
+    /*위치 수정예정*/
+}
+
+/*text 입력 상자*/
+input, input:focus {
+    background: #FFFFFF;
+
+    padding: 3px 6px;
+
+    height: 16px;
+
+    border: 2px solid #000000;
+    border-radius: 5px;
+    outline: none;
+
+    font-family: 'Galmuri9';
+    font-size: 13px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    font-family: 'Galmuri9';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    width: 92px;
+    height: 25px;
+
+    background: #000000;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 5px;
+}
+
+/*[end] modal==========================================================================*/
+
+/*[start] a link ==========================================================================*/
+
+a {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:active {
+    color: black;
+    text-decoration-line: none;
+}
+
+/*[end] a link ==========================================================================*/

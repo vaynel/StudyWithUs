@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.project2.user.UserMapper">
+
+    <!-- User 테이블 가져오기 -->
+    <select id="getUserList" resultType="com.team.project2.user.UserDAO">
+        SELECT *
+        FROM user
+    </select>
+
+    <!-- 회원가입 -->
+    <insert id="insertUser">
+        INSERT INTO user
+            (id, password, email, nickname, title, withdraw, role)
+        VALUES
+            (#{id}, #{password}, #{email}, #{nickname}, #{title}, #{withdraw}, #{role})
+    </insert>
+
+    <!-- 회원 정보 가져오기 -->
+    <select id="getUserByEmail" resultType="com.team.project2.user.UserDAO">
+        SELECT *
+        FROM user
+        WHERE email = #{email}
+    </select>
+
+    <!-- 회원 정보 가져오기 -->
+    <select id="getUsernameByEmail" resultType="com.team.project2.user.UserDto">
+        SELECT *
+        FROM user
+        WHERE email = #{email}
+    </select>
+
+    <select id="getUserById" resultType="com.team.project2.user.UserDAO">
+        SELECT *
+        FROM user
+        WHERE id = #{id}
+    </select>
+
+    <!-- 회원정보 수정 -->
+    <update id="updateUser">
+        UPDATE user
+        SET
+            password = #{password},
+            email = #{email},
+            nickname = #{nickname},
+            title  = #{title},
+            withdraw = #{withdraw}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 탈퇴 -->
+    <delete id="deleteUser">
+        DELETE
+        FROM user
+        WHERE id = #{id}
+    </delete>
+</mapper>
