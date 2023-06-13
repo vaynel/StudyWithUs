@@ -12,7 +12,7 @@
     place-items: center;
 }
 .room_bottom1{
-    position: absolute;
+    position: inherit;
     width: 318px;
     height: 70px;
     left: 0px;
@@ -22,7 +22,7 @@
 }
 .room_bottom2{
 
-    position: absolute;
+    position: inherit;
 width: 172px;
 height: 70px;
 left: 297px;
@@ -31,28 +31,56 @@ left: 297px;
 }
 
 .bookshelf{
-    position: absolute;
+    position: inherit;
     width: 120px;
     height: 157.97px;
     left: 350px;
-    top: 122px;
+    top: 125px;
 
 }
 
 .kirby{
-    position: absolute;
-    width: 70px;
+    position: inherit;
+    width: 50px;
     height: auto;
-    left: 204px;
-    top: 122px;
+    left: 175px;
+    top: 220px;
     z-index: 10;
 }
 .table{
-    position: absolute;
+    position: inherit;
     width: 200px;
     height: auto;
     left: 140px;
     top: 92px;
+}
+
+
+.portal{
+    position: inherit;
+    height: 145.75px;
+    width: 76.33336639404297px;
+    left: 15px;
+    top: 134px;
+    border-radius: 0px;
+}
+
+.desk{
+    position: inherit;
+    left: 160px;
+    top: 248px;
+    border-radius: 0px;
+}
+
+.radioDesk{
+    position: inherit;
+    left: 271px;
+    top: 237px;
+}
+.radio{
+    position: inherit;
+    left: 265px;
+    top: 209px;
 }
 
 .subject{
@@ -62,5 +90,23 @@ font-weight: 400;
 line-height: 31px;
 letter-spacing: 0em;
 text-align: left;
+
+position: inherit;
+left: 33px;
+top: 28px;
+
+}
+
+.status{
+    font-family: 'Galmuri9';
+font-size: 24px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: left;
+
+position: inherit;
+left: 165px;
+    top: 185px;
 
 }
