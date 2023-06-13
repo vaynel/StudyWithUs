@@ -1,0 +1,36 @@
+.allNotice{
+    background-image:url("../images/background_2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+
+    width: 468px;
+    height: 346px;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.noticeList{
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    top: 160px;
+    left: 85px;
+}
+.npc3{
+    position: absolute;
+    z-index: 5;
+    top: 203px;
+    left: 320px;
+    width: 70px;
+    height: 58px;
+}
+.container_modal_form_A{
+    position: relative;
+    left: 130px;
+    top: 20px;
+}
+

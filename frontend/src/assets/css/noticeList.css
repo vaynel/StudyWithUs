@@ -1,0 +1,9 @@
+.noticeListHead{
+    position: relative;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.noticeLists{
+    font-size: 14px;
+}

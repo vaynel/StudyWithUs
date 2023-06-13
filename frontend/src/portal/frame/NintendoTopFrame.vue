@@ -1,21 +1,29 @@
 <template>
-  <UserMain v-if="!loginStatus"/>
+  <UserMain v-if="loginStatus"/>
+   <noticePage v-if="isNoticePage"></noticePage>
+  <StudyRoom v-if="isStudyRoom" ></StudyRoom>
 </template>
 
 <script>
 import UserMain from '@/portal/user/UserMain'
+import noticePage from '@/portal/notice/notice.vue'
+import StudyRoom from '@/portal/studyRoom/PersonalStodyRoom.vue'
 
 export default {
   name: 'NintendoTopFrame',
 
   data: function() {
     return {
-      loginStatus: false
+      loginStatus: false,
+      isNoticePage : false,
+      isStudyRoom : true
     }
   },
 
   components: {
-    UserMain
+    UserMain,
+    noticePage,
+    StudyRoom
   },
 
   methods: {

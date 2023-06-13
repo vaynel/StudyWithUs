@@ -24,7 +24,7 @@
     </select>
 
     <!-- 회원 정보 가져오기 -->
-    <select id="getUsernameByEmail" resultType="com.team.project2.user.UserDto">
+    <select id="getUsernameByEmail" resultType="com.team.project2.user.UserResponses">
         SELECT *
         FROM user
         WHERE email = #{email}

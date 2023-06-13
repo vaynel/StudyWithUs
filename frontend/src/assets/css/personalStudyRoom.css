@@ -1,0 +1,66 @@
+.studyRoom{
+    background-image:url("../images/studyRoomBackground.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+
+    width: 468px;
+    height: 346px;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.room_bottom1{
+    position: absolute;
+    width: 318px;
+    height: 70px;
+    left: 0px;
+    top: 280px;
+    z-index: 20;
+
+}
+.room_bottom2{
+
+    position: absolute;
+width: 172px;
+height: 70px;
+left: 297px;
+    top: 280px;
+    z-index: 20;
+}
+
+.bookshelf{
+    position: absolute;
+    width: 120px;
+    height: 157.97px;
+    left: 350px;
+    top: 122px;
+
+}
+
+.kirby{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    left: 204px;
+    top: 122px;
+    z-index: 10;
+}
+.table{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    left: 140px;
+    top: 92px;
+}
+
+.subject{
+    font-family: 'Galmuri9';
+font-size: 24px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: left;
+
+}
