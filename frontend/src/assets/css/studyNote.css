@@ -24,8 +24,10 @@ position: inherit;
 }
 
 ._subject1{
-    top: 10px;
-    left: 90px;
+
+    top: 13px;
+    left: 75px;
+    border: none
 }
 
 ._date{
@@ -50,4 +52,16 @@ position: inherit;
     width: 308px;
     height: 213px;
     font-family: 'Galmuri11';
+}
+.btn_submit{
+    position: inherit;
+    top: 269px;
+    left: 298px;
+    background: lavender;
+    display: block;
+}
+
+input{
+    border:none;
+    padding: 0;
 }
