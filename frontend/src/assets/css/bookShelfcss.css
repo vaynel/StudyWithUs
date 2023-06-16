@@ -1,0 +1,12 @@
+.container_modal_form_B{
+    top: 45px;
+    position: absolute;
+    left: 85px;
+}
+
+#close_btn{
+    left: 271px;
+    top: 7px;
+    position: inherit;
+    width: 21px;
+}

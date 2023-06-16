@@ -26,17 +26,27 @@
 
     <form class="study_note">
       <img src="../../assets/images/note.png"> 
-      <span class="note _subject">과목 : </span><input class="note _subject1" v-model="noteStore.title">
-      <div class="note _date" >23.06.14</div>
+      <span class="note _subject">과목 : </span><input
+        v-model="noteStore.title"
+        class="note _subject1"
+      >
+      <div class="note _date">
+        23.06.14
+      </div>
       <div class="study_note_content">
         <textarea
           id="note_textarea"
+          v-model="noteStore.content"
           placeholder="노트 필기"
           style="resize: none;"
-          v-model="noteStore.content"
         />
       </div>
-      <button class="btn_submit" @click.prevent="noteStore.noteWrite()">작성완료</button>
+      <button
+        class="btn_submit"
+        @click.prevent="noteStore.noteWrite()"
+      >
+        작성완료
+      </button>
     </form>
   </div>
 </template>
@@ -47,6 +57,9 @@ import { useNoteStore } from "@/store/studyNote/studyNoteStore";
 
 export default {
   name: "StudyNote",
+  components: {
+  
+  },
   setup() {
     const noteStore = useNoteStore();
     return {
@@ -58,9 +71,6 @@ export default {
     return{
       today_date:"날짜"
     }
-  },
-  components: {
-  
   },
   methods:{
     

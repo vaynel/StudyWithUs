@@ -11,7 +11,11 @@
     <img
       class="bookshelf"
       src="../../assets/images/bookshelf.png"
+      @click="showBookShelfDetails"
     >
+    <BookShelfVue v-if="studyRoomStore.isBookShelf==true"></BookShelfVue>
+
+
     <img
       v-if="kirbyStatus==1"
       class="kirby"
@@ -42,8 +46,10 @@
       src="../../assets/images/portal_star.png"
     >
     
-    <div class="subject" v-text="noteStore.title + '&nbsp'+ '-' +'&nbsp'+ study_timer" >
-    </div>
+    <div
+      class="subject"
+      v-text="noteStore.title + '&nbsp'+ '-' +'&nbsp'+ study_timer"
+    />
 
     <div
       class="statusText"
@@ -53,16 +59,24 @@
 </template>
 
 <script>
-import { useNoteStore } from "@/store/studyNote/studyNoteStore";
+import { useNoteStore } from "@/store/PersonalStudyRoom/studyNoteStore";
+import { useStudyRoomStore} from "@/store/PersonalStudyRoom/studyRoomStore";
+import BookShelfVue from './BookShelf.vue';
 
 export default {
     name: 'StudyRoom',
     setup() {
     const noteStore = useNoteStore();
+    const studyRoomStore = useStudyRoomStore();
     return {
-      noteStore
-    }
-  },
+      noteStore,
+      studyRoomStore
+     }
+    },
+    components: {
+      BookShelfVue
+    },
+
 
     data:function(){
         return{
@@ -74,7 +88,7 @@ export default {
             sec:"",
             time:0,
             timerId:"",
-            tempStudyTitle:this.noteStore.title
+            tempStudyTitle:this.noteStore.title,
         }
 
     },
@@ -118,7 +132,16 @@ export default {
             this.min = parseInt(String((this.time - (this.hour * 60 * 60)) / 60));
             this.sec = this.time % 60;
             return String(this.hour).padStart(2, '0') + ":" + String(this.min).padStart(2, '0')+ ":" + String(this.sec).padStart(2, '0');
+        },
+        showBookShelfDetails(){
+          this.studyRoomStore.isBookShelf=true;
+          console.dir("책장열기")
+        },
+        closeBookShelf(){
+           this.studyRoomStore.isBookShelf=false;
+          console.dir("책장열기")
         }
+        
 
     }
 
