@@ -53,7 +53,7 @@
 
 
 <script>
-import { useNoteStore } from "@/store/studyNote/studyNoteStore";
+import { useNoteStore } from "@/store/PersonalStudyRoom/studyNoteStore";
 
 export default {
   name: "StudyNote",
